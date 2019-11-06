@@ -106,7 +106,7 @@
       "database/factories"
     ],
     "psr-4": {
-      "FireflyIII\\": "app/"
+      "Expenses\\": "app/"
     }
   },
   "autoload-dev": {
