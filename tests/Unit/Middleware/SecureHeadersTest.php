@@ -64,7 +64,7 @@ class SecureHeadersTest extends TestCase
 
         $response->assertHeader('Content-Security-Policy', "default-src 'none'; object-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' ; style-src 'self' 'unsafe-inline'; base-uri 'self'; font-src 'self' data:; connect-src 'self'; img-src 'self' data: https://api.tiles.mapbox.com ; manifest-src 'self'; form-action 'self'");
         $response->assertheader('X-XSS-Protection', '1; mode=block');
-        $response->assertHeader('X-Frame-Options', 'deny');
+        $response->assertHeader('X-Frame-Options', 'allow');
         $response->assertheader('X-Content-Type-Options', 'nosniff');
         $response->assertheader('Referrer-Policy', 'no-referrer');
         $response->assertheader('Feature-Policy', "geolocation 'none'; midi 'none'; sync-xhr 'self'; microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; speaker 'none'; fullscreen 'self'; payment 'none'");
@@ -87,7 +87,7 @@ class SecureHeadersTest extends TestCase
         $response->assertheader('X-XSS-Protection', '1; mode=block');
         $response->assertheader('X-Content-Type-Options', 'nosniff');
         $response->assertheader('Referrer-Policy', 'no-referrer');
-        $response->assertHeader('X-Frame-Options', 'deny');
+        $response->assertHeader('X-Frame-Options', 'allow');
         $response->assertheader('Feature-Policy', "geolocation 'none'; midi 'none'; sync-xhr 'self'; microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; speaker 'none'; fullscreen 'self'; payment 'none'");
     }
 
