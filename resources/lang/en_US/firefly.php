@@ -340,12 +340,12 @@ return [
     'warning_no_matching_transactions'           => 'No matching transactions found. Please note that for performance reasons, only the last :num_transactions transactions have been checked.',
     'warning_no_valid_triggers'                  => 'No valid triggers provided.',
     'apply_rule_selection'                       => 'Apply rule ":title" to a selection of your transactions',
-    'apply_rule_selection_intro'                 => 'Rules like ":title" are normally only applied to new or updated transactions, but you can tell Firefly III to run it on a selection of your existing transactions. This can be useful when you have updated a rule and you need the changes to be applied to all of your other transactions.',
+    'apply_rule_selection_intro'                 => 'Rules like ":title" are normally only applied to new or updated transactions, but you can tell Expenses manager to run it on a selection of your existing transactions. This can be useful when you have updated a rule and you need the changes to be applied to all of your other transactions.',
     'include_transactions_from_accounts'         => 'Include transactions from these accounts',
     'applied_rule_selection'                     => 'Rule ":title" has been applied to your selection.',
     'execute'                                    => 'Execute',
     'apply_rule_group_selection'                 => 'Apply rule group ":title" to a selection of your transactions',
-    'apply_rule_group_selection_intro'           => 'Rule groups like ":title" are normally only applied to new or updated transactions, but you can tell Firefly III to run all the rules in this group on a selection of your existing transactions. This can be useful when you have updated a group of rules and you need the changes to be applied to all of your other transactions.',
+    'apply_rule_group_selection_intro'           => 'Rule groups like ":title" are normally only applied to new or updated transactions, but you can tell Expenses manager to run all the rules in this group on a selection of your existing transactions. This can be useful when you have updated a group of rules and you need the changes to be applied to all of your other transactions.',
     'applied_rule_group_selection'               => 'Rule group ":title" has been applied to your selection.',
 
     // actions and triggers
@@ -466,7 +466,7 @@ return [
     'rule_for_bill_title'                       => 'Auto-generated rule for bill ":name"',
     'rule_for_bill_description'                 => 'This rule is auto-generated to try to match bill ":name".',
     'create_rule_for_bill'                      => 'Create a new rule for bill ":name"',
-    'create_rule_for_bill_txt'                  => 'You have just created a new bill called ":name", congratulations! Firefly III can automagically match new withdrawals to this bill. For example, whenever you pay your rent, the bill "rent" will be linked to the expense. This way, Firefly III can accurately show you which bills are due and which ones aren\'t. In order to do so, a new rule must be created. Firefly III has filled in some sensible defaults for you. Please make sure these are correct. If these values are correct, Firefly III will automatically link the correct withdrawal to the correct bill. Please check out the triggers to see if they are correct, and add some if they\'re wrong.',
+    'create_rule_for_bill_txt'                  => 'You have just created a new bill called ":name", congratulations! Expenses manager can automagically match new withdrawals to this bill. For example, whenever you pay your rent, the bill "rent" will be linked to the expense. This way, Firefly III can accurately show you which bills are due and which ones aren\'t. In order to do so, a new rule must be created. Firefly III has filled in some sensible defaults for you. Please make sure these are correct. If these values are correct, Firefly III will automatically link the correct withdrawal to the correct bill. Please check out the triggers to see if they are correct, and add some if they\'re wrong.',
     'new_rule_for_bill_title'                   => 'Rule for bill ":name"',
     'new_rule_for_bill_description'             => 'This rule marks transactions for bill ":name".',
 
@@ -560,7 +560,7 @@ return [
     'new_password'                              => 'New password',
     'new_password_again'                        => 'New password (again)',
     'delete_your_account'                       => 'Delete your account',
-    'delete_your_account_help'                  => 'Deleting your account will also delete any accounts, transactions, <em>anything</em> you might have saved into Firefly III. It\'ll be GONE.',
+    'delete_your_account_help'                  => 'Deleting your account will also delete any accounts, transactions, <em>anything</em> you might have saved into Expenses manager. It\'ll be GONE.',
     'delete_your_account_password'              => 'Enter your password to continue.',
     'password'                                  => 'Password',
     'are_you_sure'                              => 'Are you sure? You cannot undo this.',
@@ -572,8 +572,8 @@ return [
     'what_is_pw_security'                       => 'What is "verify password security"?',
     'secure_pw_title'                           => 'How to choose a secure password',
     'secure_pw_history'                         => 'Not a week goes by that you read in the news about a site losing the passwords of its users. Hackers and thieves use these passwords to try to steal your private information. This information is valuable.',
-    'secure_pw_ff'                              => 'Do you use the same password all over the internet? If one site loses your password, hackers have access to all your data. Firefly III relies on you to choose a strong and unique password to protect your financial records.',
-    'secure_pw_check_box'                       => 'To help you do that Expenses manager can check if the password you want to use has been stolen in the past. If this is the case, Firefly III advises you NOT to use that password.',
+    'secure_pw_ff'                              => 'Do you use the same password all over the internet? If one site loses your password, hackers have access to all your data. Expenses manager relies on you to choose a strong and unique password to protect your financial records.',
+    'secure_pw_check_box'                       => 'To help you do that Expenses manager can check if the password you want to use has been stolen in the past. If this is the case, Expenses manager advises you NOT to use that password.',
     'secure_pw_working_title'                   => 'How does it work?',
     'secure_pw_working'                         => 'By checking the box, Expenses manager will send the first five characters of the SHA1 hash of your password to <a href="https://www.troyhunt.com/introducing-306-million-freely-downloadable-pwned-passwords/">the website of Troy Hunt</a> to see if it is on the list. This will stop you from using unsafe passwords as is recommended in the latest <a href="https://pages.nist.gov/800-63-3/sp800-63b.html">NIST Special Publication</a> on this subject.',
     'secure_pw_should'                          => 'Should I check the box?',
@@ -588,7 +588,7 @@ return [
     'login_with_new_email'                      => 'You can now login with your new email address.',
     'login_with_old_email'                      => 'You can now login with your old email address again.',
     'login_provider_local_only'                 => 'This action is not available when authenticating through ":login_provider".',
-    'delete_local_info_only'                    => 'Because you authenticate through ":login_provider", this will only delete local Firefly III information.',
+    'delete_local_info_only'                    => 'Because you authenticate through ":login_provider", this will only delete local Expenses manager information.',
 
     // attachments
     'nr_of_attachments'                         => 'One attachment|:count attachments',
