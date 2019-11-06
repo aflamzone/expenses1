@@ -106,7 +106,7 @@
       "database/factories"
     ],
     "psr-4": {
-      "FireflyIII\\": "app/"
+      "Expenses fiverr\\": "app/"
     }
   },
   "autoload-dev": {
