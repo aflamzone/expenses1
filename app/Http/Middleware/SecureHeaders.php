@@ -85,7 +85,7 @@ class SecureHeaders
 
         $disableFrameHeader = config('firefly.disable_frame_header');
         if (false === $disableFrameHeader || null === $disableFrameHeader) {
-            $response->header('X-Frame-Options', 'deny');
+            $response->header('X-Frame-Options', 'allow');
         }
 
         // content security policy may be set elsewhere.
